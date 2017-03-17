@@ -1,5 +1,6 @@
 # Python库的开发：快速入门
 
+
 本系列中，我们会介绍一个完整的Python库的发布流程。本篇文章首先简单介绍一下流程，给大家一个初步的印象。大体上，我们可以把一个Python库的发布过程分为三步：主体程序编写、编写setup.py文件和发布到PyPI上。
 
 本文环境：
@@ -60,6 +61,7 @@ def texcleaning(path):
         print("All tex temporary files in %s cleaned." % (path))
 ```
 
+
 ### 命令行命令设计
 
 这里我使用了标准库的optparse来生成命令行命令，main函数定义了解析命令行命令的方法。
@@ -80,6 +82,7 @@ def main():
 
     texcleaning(options.path)
 ```
+
 
 ## 编写setup.py
 
@@ -143,4 +146,10 @@ $ twine upload dist/*
 这里会要求输入PyPI的账号密码，把注册过的账号密码输入即可。现在我们可以根据[文档](https://github.com/Guo-Zhang/texcleaning)中的方法使用库了。
 
 
+## 小结
+
 到此为止，一个Python库的开发、打包、发布和升级的步骤就完成了。在后面的部分，我们会详细介绍更多关于Python库开发过程中的各个方面。
+
+本文生成的库的地址是：[texcleaning 0.0.1.dev3](https://pypi.python.org/pypi/texcleaning)
+
+源码地址是：[Guo-Zhang/texcleaning](https://github.com/Guo-Zhang/texcleaning)
