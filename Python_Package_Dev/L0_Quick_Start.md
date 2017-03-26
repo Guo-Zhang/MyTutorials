@@ -18,8 +18,6 @@
 
 ```
 # texcleaning.py
-
-
 from __future__ import print_function
 
 import os
@@ -67,8 +65,7 @@ def texcleaning(path):
 这里我使用了标准库的optparse来生成命令行命令，main函数定义了解析命令行命令的方法。
 
 ```
-# texcleaning.py
-
+# texcleaning.p
 
 from optparse import OptionParser
 
@@ -89,7 +86,6 @@ def main():
 setup文件是用来实现打包和安装功能的文件，非常重要。这里我使用了比distutils更为先进的setuptools编写setup文件。
 ```
 # setup.py
-
 
 from setuptools import setup, find_packages
 
